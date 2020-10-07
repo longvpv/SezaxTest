@@ -155,7 +155,7 @@ li.recommend-item > div > p {
     max-width: 720px;
   }
   .picture-responsive {
-    width: 100%;
+    width: calc(100% / 12 * 6);
     padding: 16px;
   }
 }
