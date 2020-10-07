@@ -1,0 +1,181 @@
+.title {
+  padding-top: 5rem;
+}
+.title > h2 {
+  position: relative;
+  padding: 2rem 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.title > h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+h3 {
+  position: relative;
+  padding: 2rem 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.recipes-list > ul > li {
+  position: relative;
+  height: 100%;
+}
+
+.recipes-list > ul > li > img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  width: 85%;
+  overflow: hidden;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info {
+  position: relative;
+  padding: 1rem 3rem 1rem 1rem;
+  max-width: 85%;
+  background-color: deeppink;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info > p {
+  color: white;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 100%;
+  width: 9rem;
+  height: 3rem;
+  -webkit-transform: rotate(290deg);
+  transform: rotate(290deg);
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  background-color: deeppink;
+  background-origin: padding-box;
+}
+
+.recommend-bg {
+  background-color: #eee;
+  margin-top: 4rem;
+  padding: 4rem 0;
+}
+
+li.recommend-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+li.recommend-item > img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1.5rem;
+}
+
+li.recommend-item > div > p.date {
+  color: crimson;
+  font-size: 0.8rem;
+}
+
+li.recommend-item > div > p {
+  margin-bottom: 0.5rem;
+}
+
+/*  */
+/* ---------------Container Style--------------- */
+/*  */
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -16px;
+}
+
+.picture-responsive {
+  width: 100%;
+  padding: 16px;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .picture-responsive {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .picture-responsive {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .picture-responsive {
+    width: calc(100% / 12 * 6);
+    padding: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .picture-responsive {
+    width: calc(100% / 12 * 4);
+    padding: 16px;
+  }
+}
