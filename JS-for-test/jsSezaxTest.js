@@ -17,12 +17,12 @@ console.log(anotherResult);
 
 const array = [1, 2, 2, 3, 4, 6, 7, 8, 6];
 
-function name(array) {
+function filterArray(array) {
   const result = array.filter((item, index) => array.indexOf(item) === index);
   return result;
 }
 
-const result = name(array);
+const result = filterArray(array);
 console.log(result);
 
 // ---------------------------------------
